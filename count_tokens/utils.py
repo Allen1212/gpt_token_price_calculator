@@ -9,7 +9,6 @@ import tiktoken
 
 
 def parse_docx(file: BytesIO) -> str:
-    print(type(file))
     text = docx2txt.process(file)
     # Remove extra spaces and newlines
     text = re.sub(r"\s*\n\s*", " ", text)
@@ -22,8 +21,7 @@ def parse_pdf(file: BytesIO) -> str:
         # Remove extra spaces and newlines
         text = re.sub("\s*\n\s*", " ", text)
         return text
-
-    doc = fitz.open(file)
+    doc = fitz.open(stream=file.read(), filetype="pdf")
     total_pages = doc.page_count
     text_list = []
 
