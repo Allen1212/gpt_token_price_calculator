@@ -4,6 +4,9 @@
 
 Calculate tokens and estimate the price for the **File** ➕ **Prompt** fed into the GPT model.
 
+## 🎞 Demo
+
+![demo](demo/demo.gif)
 
 ## 💻 Running Locally
 
