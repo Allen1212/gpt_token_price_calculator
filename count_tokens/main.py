@@ -4,9 +4,9 @@ from utils import parse_docx, parse_pdf, parse_txt, count_tokens
 
 
 st.set_page_config(
-    page_title="GPT Token Price Calculator", page_icon="📟", layout="wide"
+    page_title="GPT Token Price Calculator", page_icon="🧮", layout="wide"
 )
-st.header("📟GPT Token Price Calculator")
+st.header("🧮GPT Token Price Calculator")
 
 sidebar()
 

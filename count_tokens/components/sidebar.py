@@ -5,7 +5,7 @@ def sidebar():
     with st.sidebar:
         st.markdown("# About")
         st.markdown(
-            "📟**GPT Token Price Calculator** helps you estimate token count and pricing for GPT models based on your uploaded file and/or provided prompt, enabling efficient cost management."
+            "🧮**GPT Token Price Calculator** helps you estimate token count and pricing for GPT models based on your uploaded file and/or provided prompt, enabling efficient cost management."
         )
         st.markdown(
             "If you like it, please give [GPT Token Price Calculator](https://github.com/Allen1212/gpt_token_price_calculator.git) a star 🌟."
