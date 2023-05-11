@@ -42,10 +42,11 @@ st.session_state["PROMPT"] = prompt
 button = st.button("Calculate")
 
 if button or st.session_state.get("submit"):
+
     if not uploaded:
-        st.error("Please upload a document!")
-    else:
-        st.session_state["submit"] = True
-        length, price = count_tokens(doc)
-        st.markdown(f"#### 🔢Tokens: :green[{length}]")
-        st.markdown(f"#### 💵Price: :green[${price:g}]")
+        doc = ""
+    
+    st.session_state["submit"] = True
+    length, price = count_tokens(doc)
+    st.markdown(f"#### 🔢Tokens: :green[{length}]")
+    st.markdown(f"#### 💵Price: :green[${price:g}]")
