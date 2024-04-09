@@ -27,9 +27,12 @@ def sidebar():
             "Which model will you use?",
             (
                 "gpt-3.5-turbo",
+                "gpt-3.5-turbo-0613",
+                "gpt-3.5-turbo-1106",
                 "gpt-3.5-turbo-16k",
                 "gpt-4-8k",
                 "gpt-4-32k",
+                "gpt-4-turbo-preview",
                 "ada",
                 "babbage",
                 "curie",
