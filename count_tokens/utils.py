@@ -50,7 +50,7 @@ def count_tokens(text: str) -> Tuple[str, int]:
     enc = tiktoken.encoding_for_model(model)
     length = len(enc.encode(total))
     
-    model_price_pairs = {'gpt-3.5-turbo-0613': 0.0015, 'gpt-3.5-turbo-1106': 0.001, 'gpt-3.5-turbo': 0.0005, 'gpt-3.5-turbo-16k': 0.003, 'gpt-4-8k': 0.003, 'gpt-4-32k':0.006, 'gpt-4-turbo-preview': 0.001, 'ada': 0.0004, 'babbage':0.0005, 'curie': 0.002, 'davinci': 0.02}
+    model_price_pairs = {'gpt-3.5-turbo-0613': 0.0015, 'gpt-3.5-turbo-1106': 0.001, 'gpt-3.5-turbo': 0.0005, 'gpt-3.5-turbo-16k': 0.003, 'gpt-4-8k': 0.03, 'gpt-4-32k':0.06, 'gpt-4-turbo': 0.01, 'gpt-4o': 0.005, 'ada': 0.0004, 'babbage':0.0005, 'curie': 0.002, 'davinci': 0.02}
     
     price = (int(length) / 1000) * model_price_pairs[model] 
     
