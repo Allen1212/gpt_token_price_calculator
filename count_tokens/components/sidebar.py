@@ -34,6 +34,7 @@ def sidebar():
                 "gpt-4-32k",
                 "gpt-4-turbo",
                 "gpt-4o",
+                "gpt-4o-mini",
                 "ada",
                 "babbage",
                 "curie",
